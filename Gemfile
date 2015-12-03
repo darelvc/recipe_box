@@ -17,6 +17,7 @@ gem 'cocoon', '~> 1.2', '>= 1.2.6'
 gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'friendly_id', '~> 5.1'
 gem 'babosa'
+gem 'searchkick', '~> 1.0', '>= 1.0.3'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do

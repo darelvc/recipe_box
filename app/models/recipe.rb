@@ -1,6 +1,7 @@
 require "babosa"
 
 class Recipe < ActiveRecord::Base
+	searchkick
 	extend FriendlyId
   friendly_id :title, use: :slugged
 

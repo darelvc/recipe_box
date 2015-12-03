@@ -11,6 +11,9 @@
 		.container
 			.navbar-brand= link_to "Recipe Box", root_path
 
+			= form_tag search_recipes_path, method: :get, class: "navbar-form navbar-right", role: "search" do
+				= text_field_tag :search, params[:search], class: "form-control"
+
 			- if user_signed_in? 
 				%ul.nav.navbar-nav.navbar-right
 					%li= link_to "New Recipe", new_recipe_path
